@@ -3,7 +3,6 @@ using System.IO;
 
 namespace SuperReaperLib
 {
-    // TODO : Make adding a backslash to the file location automatic if it is not present.
 
     /// <summary>
     /// To use the logger create a Static instance of it.
@@ -18,11 +17,19 @@ namespace SuperReaperLib
         /// This will set the name of the log and location for the log to be stored.
         /// </summary>
         /// <param name="fileName"> File extension not required but recommended. </param>
-        /// <param name="fileLocation"> MUST END WITH A BACKSLASH. </param>
+        /// <param name="fileLocation"> The file path where you want the log to be stored. </param>
         public Logger(string fileName, string fileLocation)
         {
             this.fileName = fileName;
-            this.fileLocation = fileLocation;
+            if (fileLocation.EndsWith("\\"))
+            {
+                this.fileLocation = fileLocation;
+            }
+            else
+            {
+                this.fileLocation = fileLocation + "\\";
+            }
+            
         }
 
         /// <summary>
