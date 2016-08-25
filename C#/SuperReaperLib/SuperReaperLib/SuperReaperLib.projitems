@@ -10,5 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Logger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VersionChecker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VersionCheckerCallback.cs" />
   </ItemGroup>
 </Project>

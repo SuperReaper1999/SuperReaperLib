@@ -5,13 +5,22 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SuperReaperLib", "SuperReaperLib\SuperReaperLib.shproj", "{B6CA2819-288A-4297-B669-CCA13CEA27DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibTestApp", "LibTestApp\LibTestApp.csproj", "{DF9B7C82-8C16-44AC-B75B-D4DB17B4AC05}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SuperReaperLib\SuperReaperLib.projitems*{df9b7c82-8c16-44ac-b75b-d4db17b4ac05}*SharedItemsImports = 4
 		SuperReaperLib\SuperReaperLib.projitems*{b6ca2819-288a-4297-b669-cca13cea27dd}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF9B7C82-8C16-44AC-B75B-D4DB17B4AC05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF9B7C82-8C16-44AC-B75B-D4DB17B4AC05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF9B7C82-8C16-44AC-B75B-D4DB17B4AC05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF9B7C82-8C16-44AC-B75B-D4DB17B4AC05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
